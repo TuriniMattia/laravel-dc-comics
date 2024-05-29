@@ -1,0 +1,1 @@
+<h1>vista index di _d_c_comics</h1>
