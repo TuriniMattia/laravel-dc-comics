@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ComicController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,3 +13,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+
+
+//COMICS CRUD
+//INDEX
+Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
+//SHOW
