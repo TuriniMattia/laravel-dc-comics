@@ -3,9 +3,13 @@
 @section('title','Nuovi arrivi')
 
 @section('content')
-<h1>vista index di _d_c_comics</h1>
+
+
 <main>
     <section>
+        <div class="container">
+            <h1>DC Comics</h1>
+        </div>
         <div class="container">
             <table class="table">
                 <thead>
