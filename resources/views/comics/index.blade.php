@@ -8,7 +8,15 @@
 <main>
     <section>
         <div class="container">
-            <h1>DC Comics</h1>
+            <div class="row mt-5 mb-5">
+                <div class="col-auto">
+                    <h1>DC Comics</h1>
+                </div>
+                <div class="col-auto ms-auto">
+                    <a class="btn btn-primary " href="{{route('comics.create')}}">Aggiungi un prodotto in vendita</a>
+                </div>
+            </div>
+
         </div>
         <div class="container">
             <table class="table">
