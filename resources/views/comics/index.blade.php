@@ -37,6 +37,14 @@
                         <td>
                             <img src="{{ $comic->thumb }}" height="150" width="150" alt="">
                         </td>
+                        <td>
+                            <p>{{$comic->sale_date}}</p>
+                        </td>
+                        <td>
+                            <div class="d-flex">
+                                <a href="{{route ('comics.edit',$comic)}}">Edit</a>
+                            </div>
+                        </td>
 
                     </tr>
                     @endforeach

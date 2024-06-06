@@ -6,9 +6,16 @@
 <main>
     <section>
         <div class="container">
-            <h1>
-                Guarda il prodotto nel dettaglio : {{$comic->title}}
-            </h1>
+            <div class="row">
+                <div class="col-auto">
+                    <h1>
+                        Guarda il prodotto nel dettaglio : {{$comic->title}}
+                    </h1>
+                </div>
+                <div class="col-auto ms-auto">
+                    <a href="{{route ('comics.edit',$comic)}}">Edit</a>
+                </div>
+            </div>
         </div>
         <div class="container">
             <h3>Descrizione</h3>

@@ -11,7 +11,8 @@
             </h1>
         </div>
         <div class="container">
-            <form action="">
+            <form action="{{route('comics.store')}}" method="POST">
+                @csrf
                 <div class="mb-3">
                     <label for="title" class="form-label">Titolo</label>
                     <input type="string" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Titolo del prodotto da vendere">
@@ -34,7 +35,7 @@
                     <textarea type="text" name="artist" class="form-control" id="exampleFormControlInput1" rows="3" placeholder="Disegnatore/i"></textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="title" class="form-label">Scritto da</label>
+                    <label for="writers" class="form-label">Scritto da</label>
                     <textarea type="text" name="writers" class="form-control" rows="3" id="exampleFormControlInput1" placeholder="Scrittore/i"></textarea>
                 </div>
                 <div class="mb-3">
@@ -44,6 +45,11 @@
                 <div class="mb-3">
                     <label for="series" class="form-label">Serie</label>
                     <input type="string" name="series" class="form-control" id="exampleFormControlInput1" placeholder="Serializzazione">
+                </div>
+                <div class="mb-3">
+                    <label for="sale_date" class="form-label">Data Di Vendita</label>
+                    <input type="date" name="sale_date" class="form-control" id="exampleFormControlInput1" placeholder="Data in cui carichiamo il prodotto">
+
                 </div>
                 <button class="btn btn-primary">Metti in vendita</button>
             </form>
